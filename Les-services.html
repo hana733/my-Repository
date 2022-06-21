@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+      <link href="./css/style.css" rel="stylesheet">
+    </head>
+    <body>
+      <nav class="navbar navbar-primary navbar-transparent" id="header">
+          <div class="container-fluid">
+              <a href="Accueil.html">Accueil</a>
+              <a href="Plan-du-site.html">Plan du site</a>
+              <a href="Sites-d'interets.html">Sites d'intérêts</a>
+              <a href="types-de-serveur.html">Les types de serveur</a>
+              <a href="Les-services.html">Les services</a>
+              <div class="subnav">
+                <button class="subnavbtn">Les rôles et fonctionnalités du serveur<i class="fa fa-caret-down"></i></button>
+                <div class="subnav-content">
+                    <a href="Les-roles.html">Les rôles</a>
+                    <a href="Les-fonctionnalites.html">Les fonctionnalités</a>
+                </div>
+              </div>
+                  <a href="FAQ.html">FAQ</a>
+                  <a href="A-propos.html">À propos</a>
+                  <a href="Contact.html">Contact</a>
+          </div>
+      </nav>
+        <div class="main">
+          <br>
+          <br>
+          <br>
+          <h1 id="titre1">Les services</h1>
+          <h2>Les services qu’un serveur peut rendre sont nombreux, on va nommer quelques-uns qui sont les plus utilisés</h2>
+          <div class="row">
+            <div class="column">
+              <div class="content">
+                <img src="./img/img1.jpg" alt="" style="width:100%">
+                <h3>L'accès au web</h3>
+                <p>C’est une communication à travers le réseau internet, utilisée pour transférer des fichiers en format xml avec le protocole http. C’est un service web fournit par un serveur de base de données</p>
+              </div>
+            </div>
+            <div class="column">
+              <div class="content">
+                <img src="./img/img2.jpg" alt="" style="width:100%">
+                <h3>L’envoie et la réception de courriels</h3>
+                <p>C’est le serveur de messagerie qui fournit aux protocoles SMTP de transférer le courrier d'un serveur à un autre point de connexion. Au POP3 d’aller récupérer le courrier sur le serveur et IMAP permet de gérer plusieurs boîtes aux lettres.</p>
+              </div>
+            </div>
+            <div class="column">
+              <div class="content">
+                <img src="./img/img3.jpg" alt="" style="width:100%">
+                <h3>La mise en commun des imprimantes</h3>
+                <p>c’est le serveur d’impression qui offre le service de partager 1 ou plusieurs imprimantes pour 1 ou plusieurs utilisateurs sur le même réseau.</p>
+              </div>
+            </div>
+            <div class="column">
+              <div class="content">
+                <img src="./img/img4.jpg" alt="" style="width:100%">
+                <h3>Le stockage et la consultation des données</h3>
+                <p>le serveur de la base de données, il sert à stocker, à extraire et gérer les données. Il assure la sécurité et l’intégrité des données en gérant leurs mises à jour.</p>
+              </div>
+            </div>
+            <div class="column">
+              <div class="content">
+                <img src="./img/img5.jpg" alt="" style="width:100%">
+                <h3>Le contrôle des accès</h3>
+                <p>Les permissions NTFS, ils permettent de gérer les accès des utilisateurs e leur attribuant les autorisations nécessaires et avoir un contrôle sur le système pour la sécurité informatique.</p>
+              </div>
+            </div>
+            <div class="column">
+              <div class="content">
+                <img src="./img/img6.jpg" alt="" style="width:100%">
+                <h3>Le service DHCP</h3>
+                <p>Il offre le service à l’ordinateur de se connecter sur le réseau en trouvant une adresse IP.</p>
+              </div>
+            </div>
+            <div class="column">
+              <div class="content">
+                <img src="./img/img7.jpg" alt="" style="width:100%">
+                <h3>Le service DNS</h3>
+                <p>Il sert à donner des noms reçus par les sites internet jusqu’aux serveurs, SMTP et IMAP sont 2 services d’envois et de réception de courriels.</p>
+              </div>
+            </div>
+            <div class="column">
+              <div class="content">
+                <img src="./img/img8.jpg" alt="" style="width:100%">
+                <h3>Service FTP</h3>
+                <p>il est destiné au partage de fichiers, en permettant de copier des fichiers d’un ordinateur vers un autre ordinateur du réseau avec le protocole TCP/IP.</p>
+              </div>
+            </div>
+            <div class="column">
+              <div class="content">
+                <img src="./img/img9.jpg" alt="" style="width:100%">
+                <h3>Active Directory</h3>
+                <p>on l’appelle aussi le service d’annuaire, il fournit le service d’authentification à un réseau d’ordinateurs.  Il répertorie les éléments d’un réseau tels que les comptes utilisateurs, les serveurs, les ordinateurs, les imprimantes, les dossiers partagés, etc…</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <!-- Début Script -->
+          <script>
+            filterSelection("all")
+            function filterSelection(c) {
+              var x, i;
+              x = document.getElementsByClassName("column");
+              if (c == "all") c = "";
+              for (i = 0; i < x.length; i++) {
+                w3RemoveClass(x[i], "show");
+              if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+              }
+            }
+            
+            function w3AddClass(element, name) {
+              var i, arr1, arr2;
+              arr1 = element.className.split(" ");
+              arr2 = name.split(" ");
+              for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+              }
+            }
+          
+            function w3RemoveClass(element, name) {
+              var i, arr1, arr2;
+              arr1 = element.className.split(" ");
+              arr2 = name.split(" ");
+              for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                  arr1.splice(arr1.indexOf(arr2[i]), 1);     
+                }
+              }
+              element.className = arr1.join(" ");
+            }
+              var btnContainer = document.getElementById("myBtnContainer");
+              var btns = btnContainer.getElementsByClassName("btn");
+              for (var i = 0; i < btns.length; i++) {
+              btns[i].addEventListener("click", function(){
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+              });
+            }
+          </script>
+          <!-- Fin Script-->
+                   <!--Début de la section social media-->
+                   <footer class="social-footer">
+                    <div class="social-footer-left-align">
+                      <a href=""><img class="logo" src=""></a>
+                    </div>
+                    <div class="social-footer-icons">
+                      <ul class="menu simple">
+                        <li><a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.pinterest.com/"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+                        <li><a href="https://twitter.com/?lang=en"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                      </ul>
+                    </div>
+                  </footer>
+                    <!--Fin de la section social media-->
+                    <!--Début de la section lien-->           
+                    <section class="text-sm-center navbar fixed-bottom">
+                      <div class="pied-de-page" id="footer">
+                          <a href="Plan-du-site.html">Plan du site</a>
+                          <a href="Contact.html">Contact</a>
+                      </div>
+                    </section>
+                    <!--Fin de la section lien-->
+  </body>
+</html>
