@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;1,300&family=Open+Sans:ital,wght@0,300;0,400;1,300&family=Redressed&display=swap');
+
+/*========== Début de la section index ==========*/
+/*la taille de la police*/
+font {
+font-size: 10px;
+/*le nom de la police */
+font-family: 'Open Sans', sans-serif; 
+margin: 0;
+}
+/*La couleur du fond de la page*/  
+body {
+background-color: transparent;
+}
+.container-fluid {
+	z-index: 1001;
+}
+.container-fluid {
+	width: fixed;
+}
+.navbar-primary{
+  resize: horizontal;
+  text-size-adjust: 12px;
+}
+
+/*mettre les éléments en avant*/
+.header {
+z-index: "999";
+position: absolute;
+top: 0;
+left: left;
+width: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 15px 200px;
+transition: 0.5s ease;
+}
+/* Centrer le titre */
+h1 {
+z-index: 1001;
+color: #ddd;
+text-align: center;
+}
+/*Le menu de navigation */
+.navbar {
+background-color:"";
+}
+/*Le lien de menu, la couleur de l'élément*/
+.navbar a {
+float: left;
+font-size: 20px;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+padding:0 10px;
+}
+  /*couleur de police de fond*/
+.navbar a:hover {
+background-color: #ddd;
+color:rgb(53, 64, 214);
+}
+  /*Le sous-menu*/
+.subnav {
+float: left;
+overflow: hidden;
+}
+  /*Bouton de sous-menu */
+.subnav .subnavbtn {
+font-size: 20px;
+border: none;
+outline: none;
+color: white;
+padding: 14px 16px;
+background-color: inherit;
+font-family: inherit;
+margin: 0;
+}
+  /*Couleur de background des liens*/
+.navbar a:hover, .subnav:hover .subnavbtn {
+background-color: rgb(199, 207, 224);
+}
+  /*Le style et la position de sous-menu*/
+.subnav-content {
+display: none;
+position: absolute;
+left: 0;
+background-color: rgb(199, 207, 224);
+width: 100%;
+z-index: 4;
+}
+  /*Le style des liens*/
+.subnav-content a {
+float: left;
+color: white;
+text-decoration: none;
+}
+/*Ajouter un background*/
+.subnav-content a:hover {
+background-color: #eee;
+color: rgb(199, 207, 224);
+}
+
+.subnav:hover .subnav-content {
+display: block;
+}
+  /*video en background*/ 
+video {
+position: fixed;
+right: 0;
+bottom: 0;
+min-width: 100%;
+min-height: 100%;
+}
+  /*Titre */
+.titre {
+z-index: 1000;
+font-size:60px;
+background-color:#b4b7d7;
+color: #b4b7d7;
+position: relative;
+top: 0;
+}
+   /*Position de la footer navbar*/ 
+.footer {
+text-align: center;
+padding: 6px;
+background-color: transparent;
+color: white;
+display: block;
+}
+  /* Position de l'audio */
+.Audio  {
+position: relative;
+top: 500px;
+left: 20px;
+}   
+/*========== Fin de la section index ==========*/
+/*========== Début de la section À propos ==========*/
+font {
+font-size: 10px;
+/*le nom de la police */
+font-family: 'Open Sans', sans-serif; 
+margin: 0;
+}
+body {
+font-family: Arial, Helvetica, sans-serif;
+margin: 0;
+}
+html {
+box-sizing: border-box;
+}
+*, *:before, *:after {
+box-sizing: inherit;
+}
+.column {
+float: left;
+width: 33.3%;
+margin-bottom: 16px;
+padding: 0 8px;
+}
+.card {
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+margin: 8px;
+}
+.about-section {
+padding: 70px;
+text-align: center;
+background-color: #474e5d;
+color: white;
+}
+.container {
+padding: 0 10px;
+}
+.container::after, .row::after {
+content: "";
+clear: both;
+display: table;
+}
+.title {
+color: grey;
+}
+@media screen and (max-width: 650px) {
+.column {
+width: 100%;
+display: block;
+}
+}
+/*========== Fin de la section À propos ==========*/
+/*========== Début de la section FAQ ==========*/
+.header {
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-size: 20;
+font-style: italic;
+}
+.body{
+background: #eee;
+padding-top: 20px;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+/*marge entre les questions*/
+.faq-item{
+margin-bottom: 20px;
+margin-top: 20px;
+}
+
+.faq-body{
+display: none;
+margin-top: 30px;
+}
+
+/*le signe plus*/
+.faq-plus{
+float: right;
+font-size: 1.4em;
+line-height: 1em;
+cursor: pointer;
+}
+
+/* la ligne entre les questions*/
+hr{
+background-color: #8c86da;
+}
+/*========== Fin de la section FAQ ==========*/
+/*========== Début de la section des fonctionnalités ==========*/
+.body{
+background: rgb(133, 138, 215);
+}
+th, td {
+border: 1px solid black;
+border-radius: 15px;
+}
+/*========== Début de la section des fonctionnalités ==========*/
+/*========== Début de la section des rôles ==========*/
+#table, th, td {
+border: 1px solid black;
+border-collapse: collapse;
+}
+#table.center {
+margin-left: auto;
+margin-right: auto;
+}
+/*========== Fin de la section des rôles ==========*/
+/*========== Début de la section de contact ==========*/
+input[type=text], select, textarea {
+width: 100%; 
+padding: 12px; 
+border: 1px solid #ccc; 
+border-radius: 4px; 
+box-sizing: border-box; 
+margin-top: 6px; 
+margin-bottom: 16px; 
+resize: vertical; 
+}
+/* bouton d'envoi */
+input[type=submit] {
+background-color: #9287d3;
+color: white;
+padding: 12px 20px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+input[type=submit]:hover {
+background-color: #ebe7f9;
+}
+.container {
+border-radius: 5px;
+background-color: #a497f1;
+padding: 20px;
+}
+/*========== Fin de la section de contact ==========*/
+/*========== Début de la section les services ==========*/
+*{
+box-sizing: border-box;
+}
+body {
+background-color: #c6baf7;
+padding: 20px;
+font-family: Arial;
+}
+/* Centrer le site */
+main {
+max-width: 1000px;
+margin: auto;
+}
+/* Le titre*/
+h1 {
+font-size: 50px;
+word-break: break-all;
+text-align: center;
+}
+/* Sous-titre*/
+h2 {
+font-size: 24px;
+}
+/* La marge dans les colonnes*/
+.row {
+margin: 8px -16px;
+}
+/* Espace entre chaque colomne */
+.row,
+.row > .column {
+padding: 10px;
+}
+	  
+/* Alignement des colomnes */
+.column {
+float: right;
+width: 40%;
+}
+/* Contenu de chaque service */
+.content {
+background-color: white;
+padding: 40px;
+}
+/*========== Fin de la section les services ==========*/
+/*========== Début de la section Accueil ==========*/
+body, html {
+height: 100%;	
+margin: 0;
+background-color: #c6baf7;
+}
+h1 {
+font-size: 22px;
+color: white;
+font-style: normal;
+}
+h2{
+font-size: 22px;
+color: white;
+font-style: normal;
+}
+h3{
+font-size: 24px;
+color: white;
+font-style: unset;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.social-footer {
+padding: 1rem;
+background: transparent;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+-webkit-align-items: center;
+-ms-flex-align: center;
+align-items: center;
+-webkit-justify-content: space-between;
+-ms-flex-pack: justify;
+justify-content: space-between;
+}
+.social-footer .social-footer-icons li:last-of-type {
+margin-right: 0;
+}
+.social-footer .social-footer-icons .fa {
+font-size: 1.3rem;
+color: #fefefe;
+}
+.social-footer .social-footer-icons .fa:hover {
+color: transparent;
+transition: color 0.3s ease-in;
+}
+/*========== Fin de la section Accueil ==========*/
+/*========== Début de la section Plan du site ==========*/
+ul, #myUL {
+list-style-type: none;
+}
+#myUL {
+margin: 0;
+padding: 0;
+}
+.caret {
+cursor: pointer;
+-webkit-user-select: none; 
+-moz-user-select: none; 
+-ms-user-select: none; 
+user-select: none;
+}
+.caret::before {
+content: "\25B6";
+color: black;
+display: inline-block;
+margin-right: 6px;
+}
+.caret-down::before {
+-ms-transform: rotate(90deg); /* IE 9 */
+-webkit-transform: rotate(90deg); /* Safari */
+transform: rotate(90deg);  
+}
+.nested {
+display: none;
+}
+.active {
+display: block;
+}
+/*========== Fin de la section Plan du site ==========*/
+
+
+
+	  
